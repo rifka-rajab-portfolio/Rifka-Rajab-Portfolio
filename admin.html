@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Admin Dashboard | Rifka</title><link rel="stylesheet" href="admin.css"><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script></head>
+<body><main class="wrap"><a href="index.html" class="back">← View Portfolio</a><section class="panel">
+  <h1>Portfolio Admin</h1><p class="muted">Sign in to manage your portfolio content.</p>
+  <div id="loginBox"><label>Email</label><input id="email" type="email" autocomplete="username" placeholder="Your admin email"><label>Password</label><input id="password" type="password" autocomplete="current-password" placeholder="Password"><button id="loginBtn">Sign in</button><p id="loginMessage" class="message"></p></div>
+  <div id="dashboard" hidden>
+    <div class="topline"><h2>Manage content</h2><button class="light" id="logoutBtn">Log out</button></div>
+    <p class="muted">Choose a content type, fill in the details and save. You can edit or delete existing entries below.</p>
+    <form id="itemForm">
+      <input type="hidden" id="itemId">
+      <label>Content type</label><select id="category"><option value="about">About Me</option><option value="skill">Skill</option><option value="certificate">Certificate</option><option value="project">Project</option><option value="education">Education</option><option value="contact">Contact</option><option value="resume">Resume</option></select>
+      <label>Title / Name</label><input id="title" required placeholder="e.g. Excel, Bachelor's Degree, Project name">
+      <label>Description</label><textarea id="description" rows="4" placeholder="Write a short description"></textarea>
+      <label>Technology tags (projects only; comma separated)</label><input id="tech" placeholder="Power BI, SQL, Excel">
+      <label>Issuer / Year / Intro / Role / Email / GitHub URL (additional details)</label>
+      <input id="extra1" placeholder="Additional detail (depends on content type)">
+      <label>GitHub URL (projects only)</label><input id="github" type="url" placeholder="https://github.com/yourname/project">
+      <label>Live demo URL (optional)</label><input id="live" type="url" placeholder="https://...">
+      <label>Upload file (project screenshot, certificate PDF/image, or resume PDF)</label><input id="upload" type="file" accept=".pdf,.png,.jpg,.jpeg,.webp">
+      <p class="hint">For About Me: use Title as your name, Description as your About text, and Additional detail as your short intro. For Contact: use Title as Contact, Description as a message, and Additional detail as your email. For certificates use Additional detail as issuer; for Education use it as year.</p>
+      <div class="actions"><button type="submit" id="saveBtn">Save</button><button type="button" class="light" id="clearBtn">Clear form</button></div><p id="formMessage" class="message"></p>
+    </form>
+    <hr><h2>Saved items</h2><div id="itemsList" class="items-list">Loading…</div>
+  </div>
+</section></main><script src="config.js"></script><script src="admin.js"></script></body></html>
