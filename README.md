@@ -44,8 +44,7 @@ Here are some of my analytics projects:
 | Channel | Link |
 |---|---|
 | 🌐 Portfolio | https://rifka-rajab-portfolio.github.io/Rifka-Rajab-Portfolio/ |
-| 💼 LinkedIn | [My LinkedIn Profile](ADD_YOUR_LINKEDIN_URL) |
-| 💻 GitHub | [My GitHub Profile](ADD_YOUR_GITHUB_URL) |
+| 💼 LinkedIn |www.linkedin.com/in/rifka-rajab-841b52397 |
 | 📧 Email | rifkarajabmohamedribaiali@gmail.com |
 
 ---
