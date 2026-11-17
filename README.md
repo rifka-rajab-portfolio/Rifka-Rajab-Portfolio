@@ -35,8 +35,6 @@ I enjoy exploring datasets, identifying trends, and presenting insights through 
 Here are some of my data analytics projects:
 
 - **Sales Data Analysis:** Analyzing sales performance, revenue, and business trends using Excel.
-- **HR Analytics Dashboard:** Analyzing employee data, workforce trends, and HR performance using Power BI.
-- **Business Data Analysis:** Exploring datasets to identify patterns and generate actionable insights.
 
 *More projects will be added as I continue learning and developing my skills.*
 
