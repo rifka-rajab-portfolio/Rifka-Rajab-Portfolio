@@ -39,7 +39,7 @@ Here are some of my analytics projects:
 ---
 
 
-## 📬 Contact
+##  Contact
 
 | Channel | Link |
 |---|---|
