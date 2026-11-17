@@ -1,78 +1,300 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <meta name="description" content="Rifka's Analytics and Reporting Portfolio">
+
   <title>Rifka | Analytics & Reporting Portfolio</title>
+
   <link rel="stylesheet" href="style.css">
+
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
+
 <body>
+
+  <!-- HEADER -->
   <header class="site-header">
+
     <a class="brand" href="#home">RIFKA<span>.</span></a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+      ☰
+    </button>
+
     <nav id="mainNav">
-      <a href="#home">Home</a><a href="#about">About</a><a href="#certifications">Certifications</a>
-      <a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
     </nav>
+
   </header>
 
   <main>
+
+    <!-- HOME SECTION -->
     <section class="hero section" id="home">
+
       <div class="hero-copy">
+
         <p class="eyebrow">ANALYTICS &amp; REPORTING PORTFOLIO</p>
+
         <h1>Hello, I'm <span id="heroName">Rifka Rajab</span></h1>
-        <h2 id="heroRole">Aspiring Analytics &amp; Reporting Professional</h2>
-        <p id="heroIntro">I am building my skills in data analysis, reporting and business insights. Explore my skills, certifications and projects below.</p>
+
+        <h2 id="heroRole">
+          Aspiring Analytics &amp; Reporting Professional
+        </h2>
+
+        <p id="heroIntro">
+          I am building my skills in data analysis, reporting and business insights.
+          Explore my skills, certifications and projects below.
+        </p>
+
         <div class="hero-actions">
-          <a class="btn primary" href="#projects">View Projects</a>
-          <a class="btn secondary" id="resumeButton" href="#" target="_blank" rel="noopener" hidden>View Resume</a>
+
+          <a class="btn primary" href="#projects">
+            View Projects
+          </a>
+
+          <a class="btn secondary"
+             id="resumeButton"
+             href="#"
+             target="_blank"
+             rel="noopener"
+             hidden>
+            View Resume
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <div class="art-card">
+          <span>DATA</span>
+          <strong>Insights<br>to Action</strong>
+          <i>▥　▤　▦</i>
         </div>
       </div>
-      <div class="hero-art" aria-hidden="true"><div class="art-card"><span>DATA</span><strong>Insights<br>to Action</strong><i>▥　▤　▦</i></div></div>
+
     </section>
 
+
+    <!-- ABOUT SECTION -->
     <section class="section" id="about">
-      <div class="section-heading"><p class="eyebrow">GET TO KNOW ME</p><h2>About Me</h2></div>
-      <p class="section-intro" id="aboutText">Your introduction will appear here after you add it in the Admin Dashboard.</p>
-    </section>
 
-    <section class="section soft" id="certifications">
-      <div class="section-heading"><p class="eyebrow">LEARNING &amp; DEVELOPMENT</p><h2>Certifications</h2></div>
-      <div class="card-grid" id="certificationsList"><p class="empty-state">Certificates will appear here after you add them in the Admin Dashboard.</p></div>
-    </section>
+      <div class="section-heading">
 
-    <section class="section" id="skills">
-      <div class="section-heading"><p class="eyebrow">WHAT I WORK WITH</p><h2>Skills</h2></div>
-      <div class="skill-list" id="skillsList"><p class="empty-state">Skills will appear here after you add them in the Admin Dashboard.</p></div>
-    </section>
+        <p class="eyebrow">GET TO KNOW ME</p>
 
-    <section class="section soft" id="projects">
-      <div class="section-heading"><p class="eyebrow">SELECTED WORK</p><h2>Projects</h2><p class="section-intro">Practical work and projects added by me.</p></div>
-      <div class="filters" id="projectFilters">
-        <button class="filter active" data-filter="All">All</button>
-        <button class="filter" data-filter="Power BI">Power BI</button>
-        <button class="filter" data-filter="Python">Python</button>
-        <button class="filter" data-filter="SQL">SQL</button>
-        <button class="filter" data-filter="Excel">Excel</button>
+        <h2>About Me</h2>
+
       </div>
-      <div class="card-grid" id="projectsList"><p class="empty-state">Your projects will appear here after you add them in the Admin Dashboard.</p></div>
+
+      <p class="section-intro" id="aboutText">
+        Your introduction will appear here after you add it in the Admin Dashboard.
+      </p>
+
     </section>
 
+
+    <!-- CERTIFICATIONS SECTION -->
+    <section class="section soft" id="certifications">
+
+      <div class="section-heading">
+
+        <p class="eyebrow">LEARNING &amp; DEVELOPMENT</p>
+
+        <h2>Certifications</h2>
+
+      </div>
+
+      <div class="card-grid" id="certificationsList">
+
+        <p class="empty-state">
+          Certificates will appear here after you add them in the Admin Dashboard.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- SKILLS SECTION -->
+    <section class="section" id="skills">
+
+      <div class="section-heading">
+
+        <p class="eyebrow">WHAT I WORK WITH</p>
+
+        <h2>Skills</h2>
+
+      </div>
+
+      <div class="skill-list" id="skillsList">
+
+        <p class="empty-state">
+          Skills will appear here after you add them in the Admin Dashboard.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- PROJECTS SECTION -->
+    <section class="section soft" id="projects">
+
+      <div class="section-heading">
+
+        <p class="eyebrow">SELECTED WORK</p>
+
+        <h2>Projects</h2>
+
+        <p class="section-intro">
+          Practical work and projects added by me.
+        </p>
+
+      </div>
+
+      <div class="filters" id="projectFilters">
+
+        <button class="filter active" data-filter="All">All</button>
+
+        <button class="filter" data-filter="Power BI">Power BI</button>
+
+        <button class="filter" data-filter="Python">Python</button>
+
+        <button class="filter" data-filter="SQL">SQL</button>
+
+        <button class="filter" data-filter="Excel">Excel</button>
+
+      </div>
+
+      <div class="card-grid" id="projectsList">
+
+        <p class="empty-state">
+          Your projects will appear here after you add them in the Admin Dashboard.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- EDUCATION SECTION -->
     <section class="section" id="education">
-      <div class="section-heading"><p class="eyebrow">MY BACKGROUND</p><h2>Education</h2></div>
-      <div class="timeline" id="educationList"><p class="empty-state">Education details will appear here after you add them in the Admin Dashboard.</p></div>
+
+      <div class="section-heading">
+
+        <p class="eyebrow">MY BACKGROUND</p>
+
+        <h2>Education</h2>
+
+      </div>
+
+      <div class="timeline" id="educationList">
+
+        <p class="empty-state">
+          Education details will appear here after you add them in the Admin Dashboard.
+        </p>
+
+      </div>
+
     </section>
 
-    <section class="section contact-section" id="contact">
-      <div class="section-heading"><p class="eyebrow">LET'S CONNECT</p><h2>Contact</h2></div>
-      <p id="contactText">You can contact me by email.</p>
-      <a class="btn primary" id="emailLink" href="mailto:">Contact Me</a>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section">
+
+      <div class="section-heading">
+
+        <p class="eyebrow">LET'S CONNECT</p>
+
+        <h2>Contact Me</h2>
+
+        <p class="section-intro">
+          Feel free to connect with me for professional opportunities,
+          collaborations and discussions.
+        </p>
+
+      </div>
+
+      <div id="contact-content">
+
+        <!-- EMAIL -->
+        <p>
+          <strong>Email:</strong>
+
+          <a href="mailto:rifkarajabmohamedribaiali@gmail.com">
+            rifkarajabmohamedribaiali@gmail.com
+          </a>
+        </p>
+
+
+        <!-- LINKEDIN -->
+        <p>
+          <strong>LinkedIn:</strong>
+
+          <a
+            href="https://www.linkedin.com/in/rifka-rajab-841b52397/"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            View LinkedIn Profile
+
+          </a>
+        </p>
+
+
+        <!-- GITHUB -->
+        <p>
+          <strong>GitHub:</strong>
+
+          <a
+            href="https://github.com/rifka-rajab-portfolio"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            Visit My GitHub Profile
+
+          </a>
+        </p>
+
+
+        <!-- LOCATION -->
+        <p>
+          <strong>Location:</strong> Dubai, UAE
+        </p>
+
+      </div>
+
     </section>
+
   </main>
-  <footer><span>© <span id="year"></span> Rifka Rajab</span><a href="admin.html">Admin</a></footer>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <span>© <span id="year"></span> Rifka Rajab</span>
+
+    <a href="admin.html">Admin</a>
+
+  </footer>
+
+
+  <!-- JAVASCRIPT FILES -->
   <script src="config.js"></script>
+
   <script src="script.js"></script>
+
 </body>
 </html>
