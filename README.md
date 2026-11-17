@@ -32,11 +32,9 @@ I enjoy exploring datasets, identifying trends, and presenting insights through 
 
 ##  Projects
 
-Here are some of my data analytics projects:
+Here are some of my analytics projects:
 
 - **Sales Data Analysis:** Analyzing sales performance, revenue, and business trends using Excel.
-
-*More projects will be added as I continue learning and developing my skills.*
 
 ---
 
