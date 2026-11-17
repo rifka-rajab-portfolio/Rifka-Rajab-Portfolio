@@ -32,7 +32,7 @@ async function loadPortfolio(){
 function renderProjects(projects){
   const active=document.querySelector(".filter.active")?.dataset.filter||"All";
   const list=active==="All"?projects:projects.filter(p=>(p.tech||"").toLowerCase().includes(active.toLowerCase()));
-  $("projectsList").innerHTML=list.length?list.map(x=>`<article class="item-card">${x.file_url?`<img src="${safeText(x.file_url)}" alt="${safeText(x.title)} project screenshot">`:""}<div class="item-content"><h3>${safeText(x.title)}</h3><p>${safeText(x.description||"")}</p>${x.tech?`<div class="tags">${x.tech.split(",").map(t=>`<span class="tag">${safeText(t.trim())}</span>`).join("")}</div>`:""}${linkIf(x.extra?.github_url," View GitHub")}${linkIf(x.extra?.live_url,"Live Demo")}</div></article>`).join(""):'<p class="empty-state">No projects in this category yet.</p>';
+  $("projectsList").innerHTML=list.length?list.map(x=>`<article class="item-card">${x.file_url?`<img src="${safeText(x.file_url)}" alt="${safeText(x.title)} project screenshot">`:""}<div class="item-content"><h3>${safeText(x.title)}</h3><p>${safeText(x.description||"")}</p>${x.tech?`<div class="tags">${x.tech.split(",").map(t=>`<span class="tag">${safeText(t.trim())}</span>`).join("")}</div>`:""}${linkIf(x.extra?.github_url," View GitHub↗")}${linkIf(x.extra?.live_url,"Live Demo")}</div></article>`).join(""):'<p class="empty-state">No projects in this category yet.</p>';
 }
 document.querySelectorAll(".filter").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll(".filter").forEach(x=>x.classList.remove("active"));b.classList.add("active");if(db)db.from("portfolio_items").select("*").eq("category","project").then(({data})=>renderProjects(data||[]));}));
 loadPortfolio();
