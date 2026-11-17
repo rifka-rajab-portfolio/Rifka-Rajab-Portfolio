@@ -4,7 +4,7 @@ Welcome to my Portfolio! This repository hosts my personal portfolio website, sh
 
 ##  Live Website
 
-**Portfolio: https://rifka-rajab-portfolio.github.io/Rifka-Rajab-Portfolio/
+**Portfolio**: https://rifka-rajab-portfolio.github.io/Rifka-Rajab-Portfolio/
 
 ---
 
